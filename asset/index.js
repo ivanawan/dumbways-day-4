@@ -26,7 +26,7 @@ let dataProject=[];
 function addproject(){
 
   console.log(document.getElementsByName("techno"));
-  
+
     dataProject.push({
         title:document.getElementById("title").value,
         image:URL.createObjectURL(document.getElementById("image").files[0]),
@@ -45,7 +45,7 @@ function renderPage(){
     blogContainer.innerHTML = '';
 
     dataProject.forEach((data,index)=>{
-        blogContainer.innerHTML+=`<a href="" class="card-grid">
+        blogContainer.innerHTML+=`<a href="detailproject.html" class="card-grid">
         <img src="${data.image}" alt="">
         <p class="title">${data.title}</p>
         <p class="durasi">Durasi : 3 bulan</p>
